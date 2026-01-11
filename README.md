@@ -18,7 +18,7 @@ Industrial CoreXY and servo-extrusion printers operating at 600–1000 mm/s.
 Structural, flexible, conductive, and composite materials in one workflow.
 
 ### Localized Sovereignty
-Manufacturing occurs inside the country of use—no foreign dependency.
+Manufacturing occurs inside the country of use — no foreign dependency.
 
 ### Deterministic Output
 Every part is reproducible, auditable, and traceable to its source file.
@@ -44,6 +44,7 @@ It enables:
 - Rapid disaster recovery  
 - Cost collapse of physical goods  
 - Direct integration with autonomous logistics and identity systems  
+  
 
 phoenix-print-farm/
 ├── README.md
@@ -52,10 +53,12 @@ phoenix-print-farm/
 
 This document defines the minimum viable sovereign print farm deployment.
 
-Scope:
-- One localized print cell
-- Continuous unattended operation
-- Digital inventory only
-- Government / infrastructure safe deployment
+## Scope
+
+- One localized print cell  
+- Continuous unattended operation  
+- Digital inventory only  
+- Government / infrastructure-safe deployment  
 
 This file will be expanded only after pilot approval.
+
