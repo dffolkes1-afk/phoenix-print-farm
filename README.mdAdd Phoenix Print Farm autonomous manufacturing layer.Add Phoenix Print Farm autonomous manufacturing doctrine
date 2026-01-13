@@ -106,7 +106,7 @@ It enables:
 - Direct integration with autonomous logistics and identity systems
 
 └── docs/
-    └── mvp-print-farm-2026.md             # Phoenix Print Farm — MVP 2026
+    ├── mvp-print-farm-2026.md             # Phoenix Print Farm — MVP 2026
 
 This document defines the minimum viable sovereign print farm deployment.
 
@@ -118,4 +118,114 @@ This document defines the minimum viable sovereign print farm deployment.
 - Government / infrastructure-safe deployment  
 
 This file will be expanded only after pilot approval.
+   └── docs/market-applications.md        # Phoenix Print Farm — Market Applications
 
+This document defines the initial market applications for Phoenix Print Farms.
+These applications are selected based on immediate demand, low regulatory friction,
+and clear economic advantage over traditional manufacturing and supply chains.
+
+The focus is on fasteners, tools, fixtures, replacement parts, and structural components
+that benefit from localized, on-demand production.
+
+Phoenix manufacturing prioritizes utility over novelty.
+
+---
+
+## 1. Infrastructure & Utilities
+
+### Applications
+- Pipe brackets and mounts
+- Valve handles and housings
+- Electrical enclosures
+- Custom adapters and fittings
+- Emergency replacement components
+
+### Value
+- Eliminates downtime caused by supply delays
+- Removes dependence on overseas suppliers
+- Enables same-day fabrication of critical parts
+
+---
+
+## 2. Construction & Industrial Tooling
+
+### Applications
+- Custom fasteners
+- Jigs and fixtures
+- Alignment tools
+- Formwork components
+- Site-specific brackets and supports
+
+### Value
+- Every site has unique requirements
+- Reduces rework and delays
+- Lowers tooling costs for short-run projects
+
+---
+
+## 3. Automotive, Transport & Fleet Maintenance
+
+### Applications
+- Interior and non-structural components
+- Mounts, clips, and housings
+- Service tools and gauges
+- Legacy vehicle replacement parts
+
+### Value
+- Addresses long-tail parts shortages
+- Reduces inventory storage costs
+- Supports aging fleets and mixed models
+
+---
+
+## 4. Medical & Healthcare Support
+
+### Applications
+- Surgical tools
+- Equipment mounts
+- Custom fixtures
+- Non-implantable medical components
+
+### Value
+- Rapid response for hospitals and clinics
+- Traceable and auditable production
+- Supports customization without mass inventory
+
+---
+
+## 5. Government & Emergency Services
+
+### Applications
+- Disaster response equipment
+- Temporary infrastructure components
+- Communication hardware mounts
+- Field repair tools
+
+### Value
+- Immediate local production during emergencies
+- Secure and auditable manufacturing
+- Reduced reliance on external logistics
+
+---
+
+## Market Entry Priority
+
+Initial Phoenix Print Farm deployments prioritize:
+1. Infrastructure and utilities
+2. Construction and industrial tooling
+3. Government and emergency services
+
+These sectors provide predictable demand, clear economic justification,
+and rapid validation of localized manufacturing.
+
+---
+
+## Exclusions
+
+The following are intentionally excluded from initial deployment:
+- Consumer novelty products
+- Experimental materials
+- High-risk structural components
+- Mass consumer retail manufacturing
+
+Expansion beyond these markets requires separate approval and validation.
