@@ -1,0 +1,133 @@
+docs/identity.md          # Phoenix Print Farm — Identity & Authorization (2026)
+
+This document defines the identity and authorization framework for the Phoenix Print Farm.
+It ensures that all users, operators, and automated systems are **authenticated, accountable,
+and authorized** according to national or organizational governance policies.
+
+Identity is the **root of trust** in a sovereign manufacturing network.
+
+---
+
+## 1. Identity Philosophy
+
+- Every action must be traceable to a **verified entity**.
+- Trust is never implicit; it is **cryptographically enforced**.
+- Sovereignty requires identity to be **locally verifiable**.
+- Identity is **persistent, auditable, and revocable**.
+
+---
+
+## 2. Identity Types
+
+Phoenix defines multiple identity classes:
+
+### 2.1 Human Operators
+- Technicians, engineers, and administrators
+- Authenticated with:
+  - Multi-factor credentials
+  - National or organizational identity tokens
+- Role-based permissions enforced
+
+### 2.2 Automated Systems
+- Print cells, robotic arms, sensors
+- Authenticated using **machine certificates**
+- Each system has a unique cryptographic identity
+- Permissions scoped by function and location
+
+### 2.3 Third-Party Integrations
+- Limited and signed API keys
+- Scope strictly controlled
+- Auditable access
+
+---
+
+## 3. Authentication Mechanisms
+
+- Cryptographic public/private key pairs for every identity
+- Multi-factor authentication for human users
+- Hardware-backed identity tokens for critical operators
+- Certificate chains for system nodes
+
+---
+
+## 4. Authorization & Access Control
+
+### 4.1 Role-Based Access
+- Roles: operator, engineer, supervisor, auditor, administrator
+- Each role has **least-privilege permissions**
+- Temporary elevated roles are time-limited and logged
+
+### 4.2 Job-Level Authorization
+- Every print job is authorized per identity
+- Files execute only if identity has access rights
+- Unauthorized attempts fail deterministically
+
+### 4.3 Segmentation & Scope
+- Identities are scoped to facilities, regions, or networks
+- Cross-farm access requires additional governance approval
+- Lateral privilege escalation is impossible by design
+
+---
+
+## 5. Traceability & Auditing
+
+- Immutable audit logs link identity → action → outcome
+- Logs cryptographically signed and time-stamped
+- Full traceability for compliance, forensic investigation, and reporting
+
+---
+
+## 6. Identity Lifecycle
+
+### 6.1 Enrollment
+- Verified human or system registration
+- Identity cryptographically bound to credentials
+
+### 6.2 Revocation
+- Revoked identities lose all access immediately
+- Revocation propagated to all nodes and logs
+
+### 6.3 Rotation & Renewal
+- Keys and certificates rotated periodically
+- Automated or manual renewal with governance approval
+
+---
+
+## 7. Federation & Sovereignty
+
+- Identity systems can federate across jurisdictions **only with explicit trust agreements**
+- Local sovereignty is maintained:
+  - Verification happens locally
+  - No foreign control over identity issuance or revocation
+- Cross-border operation requires **signed federation tokens**
+
+---
+
+## 8. Identity for Digital Inventory
+
+- Encrypted design files are accessible only by authorized identities
+- Files carry embedded access policies
+- Execution requires local verification of identity before decryption
+
+---
+
+## 9. Emergency & Contingency Access
+
+- Special emergency roles exist:
+  - Activated only by predefined governance triggers
+  - Temporary, fully auditable
+- Ensures continuity in disaster or failure scenarios
+
+---
+
+## 10. Summary
+
+Phoenix identity system ensures:
+
+- Deterministic trust for human and machine actors
+- Least-privilege enforcement across print farms
+- Local verification without foreign dependency
+- Full traceability and auditability
+- Secure access to critical digital inventory
+
+Identity is the **foundation** for secure, sovereign, and autonomous manufacturing.
