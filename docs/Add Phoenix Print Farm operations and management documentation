@@ -1,0 +1,106 @@
+docs/operations.md                # Phoenix Print Farm — Operations & Management (2026)
+
+This document defines the operational procedures, workflows, and best practices for managing
+Phoenix Print Farms. It ensures continuous, unattended production while maintaining sovereignty,
+traceability, and system integrity.
+
+Operations integrate **human oversight**, **automation**, and **governance** to enable
+high-speed, on-demand manufacturing.
+
+---
+
+## 1. Operational Philosophy
+
+- **Continuous Operation:** Print cells are designed for 24/7 operation with minimal intervention.
+- **Autonomous Management:** Automated scheduling, load balancing, and failure recovery reduce manual effort.
+- **Traceability & Audit:** Every action is logged, auditable, and linked to identities.
+- **Sovereign Oversight:** Operations remain under local control, even when networked.
+
+---
+
+## 2. Daily Operational Workflow
+
+### 2.1 Job Intake
+- Print jobs submitted via authenticated portals.
+- Jobs validated for:
+  - Authorized design file
+  - Approved material type
+  - Priority and urgency
+- Confirmation sent to submitter and logged.
+
+### 2.2 Scheduling & Load Balancing
+- Control plane assigns jobs to print cells based on:
+  - Printer availability
+  - Material availability
+  - Priority rules
+- Scheduler dynamically adjusts for failures or bottlenecks.
+
+### 2.3 Material Management
+- Material stocks monitored continuously via sensors.
+- Replenishment triggered automatically or manually.
+- Recycling loops handle failed prints and excess material.
+
+### 2.4 Part Removal & Handling
+- Robotic arms remove finished parts and transport to local storage.
+- Automated inspection may occur for critical parts.
+- Traceability labels applied at source.
+
+---
+
+## 3. Maintenance & Health Checks
+
+- **Predictive Maintenance:** Sensor telemetry feeds predictive algorithms.
+- **Scheduled Maintenance:** Critical components serviced during planned windows.
+- **Incident Management:** Faults logged, alerts sent to operators, automatic job rerouting.
+- **Performance Metrics:** Printer speed, throughput, downtime monitored continuously.
+
+---
+
+## 4. Security Operations
+
+- **Access Control:** Only authorized identities can modify jobs or interact with systems.
+- **Audit Logging:** All operations logged immutably, signed, and time-stamped.
+- **Anomaly Detection:** Automatic alerts for unusual operational patterns.
+- **Air-Gapped Modes:** Optional for critical or sensitive production.
+
+---
+
+## 5. Governance & Compliance in Operations
+
+- **Role-Based Oversight:** Operators, engineers, supervisors, and auditors each have defined scopes.
+- **Change Management:** Updates to workflows or firmware require approval and traceable records.
+- **Regulatory Compliance:** Operations aligned with local law, safety, and industrial standards.
+- **Incident Response:** Documented procedures for emergencies or regulatory events.
+
+---
+
+## 6. Scaling & Multi-Site Coordination
+
+- Horizontal scaling adds print cells, not buildings.
+- Control plane synchronizes job queues across multiple farms.
+- Failover ensures continuity if a site goes offline.
+- Metrics aggregated for operational analytics and optimization.
+
+---
+
+## 7. Emergency Operations
+
+- Predefined contingency procedures:
+  - Disaster response production priorities
+  - Temporary override identities with full audit
+  - Backup power and off-grid operation
+- Emergency logs remain immutable and auditable post-event.
+
+---
+
+## 8. Summary
+
+Phoenix operations are designed to:
+
+- Maintain continuous, autonomous manufacturing
+- Ensure full traceability of jobs and materials
+- Integrate automated and human oversight
+- Scale horizontally across multiple sites
+- Respond to failures or emergencies without external dependency
+
+Operations form the **nervous system** of the Phoenix Print Farm, converting digital instructions into physical reality efficiently, safely, and securely.
