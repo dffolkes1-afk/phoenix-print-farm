@@ -1,0 +1,190 @@
+docs/security.md            # Phoenix Print Farm — Security Architecture (2026)
+
+This document defines the security architecture of the Phoenix Print Farm.
+It describes how physical systems, digital assets, production workflows,
+and governance controls are protected against compromise, tampering,
+theft, and external interference.
+
+Phoenix security is **preventive, deterministic, and sovereign**.
+
+---
+
+## 1. Security Philosophy
+
+Traditional manufacturing security relies on:
+- Network perimeter defenses
+- Vendor-managed platforms
+- Reactive incident response
+
+Phoenix replaces this with:
+- Zero-trust execution
+- Cryptographic authorization
+- Local control by default
+- No implicit trust between components
+
+If a system is not explicitly authorized, it does not operate.
+
+---
+
+## 2. Threat Model
+
+Phoenix is designed to withstand:
+
+- Supply chain disruption
+- IP theft and file exfiltration
+- Insider misuse
+- Remote disablement attempts
+- Network compromise
+- Vendor backdoors
+- Political or economic coercion
+
+Security assumes **hostile conditions**, not normal operation.
+
+---
+
+## 3. Physical Security Layer
+
+### 3.1 Print Cell Security
+- Controlled physical access to print cells
+- Tamper-evident enclosures
+- Hardware identification per printer and robot
+
+### 3.2 Facility Controls
+- Zoned access (operators, maintenance, auditors)
+- Local surveillance and logging
+- Offline operation capability
+
+Physical compromise does not grant digital authority.
+
+---
+
+## 4. Digital Asset Security
+
+### 4.1 Encrypted Design Files
+- Files encrypted at rest and in transit
+- Decryption occurs only inside authorized print cells
+- No plaintext storage outside execution environment
+
+### 4.2 Key Management
+- Keys bound to jurisdiction and role
+- No shared master keys
+- Revocation supported without system downtime
+
+Loss of a key does not expose the system.
+
+---
+
+## 5. Execution Security
+
+### 5.1 Authorized Runtime Only
+- Print jobs execute only if policy permits
+- Files cannot run outside approved environments
+- Unauthorized files fail deterministically
+
+### 5.2 No General-Purpose Execution
+- Print systems do not function as open compute nodes
+- No arbitrary code execution
+- Execution scope limited to manufacturing tasks
+
+---
+
+## 6. Network Security
+
+### 6.1 Zero-Trust Networking
+- Every component authenticated
+- No implicit trust based on location
+- Encrypted internal communications
+
+### 6.2 Air-Gapped Operation
+- Full functionality without internet access
+- Optional periodic synchronization
+- No hard dependency on external services
+
+### 6.3 Segmentation
+- Control plane isolated from print cells
+- Monitoring systems read-only where possible
+- Lateral movement prevented by design
+
+---
+
+## 7. Supply Chain Security
+
+- Materials authenticated at intake
+- Material profiles bound to approved applications
+- Unauthorized materials rejected by system policy
+
+Digital and physical supply chains are independently verified.
+
+---
+
+## 8. Audit & Forensics
+
+- Immutable logs for all actions
+- Cryptographically signed events
+- Local retention with controlled export
+
+Security incidents are:
+- Detectable
+- Traceable
+- Provable
+
+No silent failure modes exist.
+
+---
+
+## 9. Update & Patch Security
+
+- Updates require governance approval
+- All updates are signed and verified
+- Rollback supported
+- No forced remote updates
+
+Security updates cannot override sovereignty guarantees.
+
+---
+
+## 10. Insider Risk Mitigation
+
+- Role-based access control
+- Least-privilege enforcement
+- Separation of duties
+- Continuous behavioral logging
+
+No single operator can compromise the system.
+
+---
+
+## 11. External Dependency Exclusion
+
+Phoenix explicitly excludes:
+- Mandatory foreign cloud services
+- External DRM enforcement
+- Vendor-controlled license servers
+- Remote kill switches
+
+Security authority remains local at all times.
+
+---
+
+## 12. Failure & Compromise Containment
+
+If compromise is detected:
+- Affected components isolate automatically
+- Production continues elsewhere if permitted
+- No cascading failure across the farm
+
+Containment is automatic, not manual.
+
+---
+
+## 13. Summary
+
+Phoenix Print Farm security provides:
+
+- Deterministic protection of IP
+- Sovereign control of execution
+- Resistance to external interference
+- Provable compliance and integrity
+
+Security is not an add-on —
+it is a **structural property** of the system.
