@@ -1,0 +1,179 @@
+docs/operations.md                   # Phoenix Print Farm — Operations Model (2026)
+
+This document defines the operational model for the Phoenix Print Farm.
+It describes how the system runs day-to-day, how production is managed,
+and how autonomous manufacturing is maintained with minimal human
+intervention.
+
+Phoenix operations are software-first, policy-driven, and resilient by
+design.
+
+---
+
+## 1. Operational Philosophy
+
+Phoenix Print Farms are not staffed factories.
+They are **autonomous production systems** supervised by operators.
+
+Key principles:
+- Software governs operations
+- Humans supervise, not micromanage
+- Production responds to demand, not forecasts
+- Failures are expected and absorbed, not escalated
+
+The goal is **continuous, reliable output with minimal operational overhead**.
+
+---
+
+## 2. Operational Roles
+
+### 2.1 System Operator
+- Oversees farm health and uptime
+- Reviews alerts and exceptions
+- Authorizes maintenance windows
+- Does NOT manage individual print jobs
+
+### 2.2 Engineering Authority
+- Approves new materials and print profiles
+- Validates design files for production
+- Sets tolerances and quality thresholds
+
+### 2.3 Governance / Oversight
+- Reviews audit logs
+- Enforces compliance and sovereignty rules
+- Approves inter-region or export production
+
+No role has unilateral control over the entire system.
+
+---
+
+## 3. Daily Operations Cycle
+
+### 3.1 Job Intake
+- Authorized jobs enter the queue automatically
+- Files are validated and scheduled
+- Priority rules determine execution order
+
+### 3.2 Autonomous Production
+- Print cells execute jobs independently
+- Robotic systems handle part removal
+- Failed jobs are retried or rerouted automatically
+
+### 3.3 Continuous Monitoring
+- Sensors report printer, material, and environment status
+- Anomalies generate alerts, not shutdowns
+- Predictive signals guide maintenance timing
+
+---
+
+## 4. Exception Handling
+
+Phoenix is designed to operate through faults.
+
+### 4.1 Printer Failure
+- Job is paused or rerouted
+- Affected printer is flagged for service
+- Production continues on remaining cells
+
+### 4.2 Material Issues
+- Material lot is isolated
+- Jobs switch to alternate approved materials
+- Inventory system logs the event
+
+### 4.3 File or Authorization Errors
+- Job is rejected
+- Event is logged
+- No production occurs without approval
+
+Failures degrade capacity — they do not halt the system.
+
+---
+
+## 5. Maintenance Operations
+
+### 5.1 Predictive Maintenance
+- Scheduled based on usage and sensor data
+- Minimizes downtime
+- Avoids catastrophic failure
+
+### 5.2 Service Windows
+- Maintenance occurs during low-demand periods
+- Cells are serviced individually, not farm-wide
+- Zero full-farm shutdown requirement
+
+### 5.3 Spare Parts Strategy
+- Replacement parts produced internally where possible
+- Critical spares maintained locally
+- No dependency on external emergency shipping
+
+---
+
+## 6. Quality Assurance
+
+Quality is enforced by **process, not inspection**.
+
+- Approved materials only
+- Locked print profiles
+- Deterministic execution
+- Automated dimensional and visual checks where applicable
+
+Each part is traceable to:
+- Design file
+- Material batch
+- Print cell
+- Time and conditions of manufacture
+
+---
+
+## 7. Security & Operational Control
+
+Operational security is continuous:
+
+- Role-based access control
+- Immutable production logs
+- Optional air-gapped operation
+- No external runtime dependencies
+
+Operators can **observe and intervene**,
+but cannot silently alter production rules.
+
+---
+
+## 8. Scaling Operations
+
+Operational complexity does not scale with size.
+
+- Adding print cells increases capacity, not workload
+- Control plane remains constant
+- Policies apply uniformly across all cells
+
+This allows:
+- City-scale farms
+- Regional clusters
+- National manufacturing grids
+
+---
+
+## 9. Emergency & Continuity Mode
+
+In emergencies:
+- Priority shifts to critical production
+- Non-essential jobs are deferred
+- Energy usage adapts to available power
+
+Phoenix Print Farms are designed to operate
+during disasters, shortages, and disruptions.
+
+---
+
+## 10. Summary
+
+Phoenix Print Farm operations deliver:
+
+- Autonomous, low-overhead manufacturing
+- Continuous production with graceful failure
+- Secure, auditable, and sovereign control
+- Scalable operations without scaling staff
+
+This operational model turns manufacturing
+into **infrastructure**, not a labor-intensive process.
