@@ -1,0 +1,182 @@
+docs/governance.md      # Phoenix Print Farm — Governance & Sovereignty Framework (2026)
+
+This document defines the governance model for the Phoenix Print Farm.
+It establishes how authority, control, compliance, and sovereignty are
+enforced across autonomous manufacturing systems without relying on
+foreign vendors, platforms, or jurisdictions.
+
+Phoenix governance is **structural, not contractual**.
+
+---
+
+## 1. Governance Philosophy
+
+Traditional manufacturing governance relies on:
+- Vendor contracts
+- External certifications
+- Trust-based supply chains
+
+Phoenix replaces this with:
+- Software-enforced policy
+- Cryptographic authorization
+- Local jurisdictional control
+- Deterministic auditability
+
+Authority is encoded into the system itself.
+
+---
+
+## 2. Sovereign Control Model
+
+Each Phoenix Print Farm operates under a defined jurisdiction.
+
+Core principles:
+- Manufacturing authority remains local
+- No external entity can disable production
+- No foreign platform controls execution rights
+- Policies are enforced at runtime, not by agreement
+
+Sovereignty is **operational**, not symbolic.
+
+---
+
+## 3. Governance Roles
+
+### 3.1 Governing Authority
+- Defines jurisdictional manufacturing policy
+- Approves export permissions and restrictions
+- Sets compliance and audit requirements
+
+This may be a government agency, public authority,
+or nationally chartered entity.
+
+### 3.2 System Steward
+- Maintains system integrity
+- Applies approved policy updates
+- Oversees security posture
+
+The steward cannot override governance policy.
+
+### 3.3 Independent Audit Authority
+- Reviews immutable logs
+- Verifies compliance
+- Certifies system behavior, not vendor claims
+
+Auditors observe — they do not operate.
+
+---
+
+## 4. Policy Enforcement Layer
+
+All governance rules are enforced through software.
+
+Examples:
+- Which designs may be manufactured
+- Where files may be executed
+- Which materials are approved
+- Whether export is permitted
+
+Policies are:
+- Versioned
+- Signed
+- Non-bypassable at runtime
+
+No manual override exists outside governance authority.
+
+---
+
+## 5. Design & Production Authorization
+
+### 5.1 Design Approval
+- Files must be authorized before production
+- Authorization includes scope, volume, and location
+- Unauthorized files cannot execute
+
+### 5.2 Production Rights
+- Rights are bound to jurisdiction
+- Time-limited where required
+- Revocable through policy updates
+
+Production authority is not transferable by operators.
+
+---
+
+## 6. Audit, Compliance & Transparency
+
+Phoenix enforces compliance by default.
+
+- Every job is logged
+- Every part is traceable
+- Every policy decision is recorded
+
+Logs are:
+- Immutable
+- Locally stored
+- Exportable for review
+
+Compliance does not depend on trust — it is provable.
+
+---
+
+## 7. Export & Cross-Border Manufacturing
+
+Cross-border manufacturing is opt-in and controlled.
+
+- Explicit authorization required
+- Jurisdictional rules enforced at execution
+- Full traceability preserved
+
+No default global execution exists.
+
+---
+
+## 8. Independence from External Control
+
+Phoenix governance explicitly excludes:
+
+- Mandatory foreign cloud services
+- External DRM platforms
+- Vendor kill switches
+- Remote disablement mechanisms
+
+System updates:
+- Are locally approved
+- Are cryptographically verified
+- Cannot alter sovereignty guarantees
+
+---
+
+## 9. Failure, Override & Emergency Authority
+
+In extreme scenarios:
+- Emergency policies may be activated
+- Scope is limited and logged
+- Automatic expiration applies
+
+There is no permanent emergency mode.
+
+---
+
+## 10. Governance Continuity
+
+Governance persists even if:
+- Network connectivity is lost
+- External services fail
+- Political or economic pressure is applied
+
+Manufacturing authority remains local,
+auditable, and enforceable.
+
+---
+
+## 11. Summary
+
+Phoenix Print Farm governance provides:
+
+- Sovereign manufacturing control
+- Software-enforced compliance
+- Vendor-independent authority
+- Transparent, auditable operations
+
+This framework ensures Phoenix is not merely
+a manufacturing platform, but **national industrial infrastructure**.
