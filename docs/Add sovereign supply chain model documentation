@@ -1,0 +1,177 @@
+docs/supply-chain.md       Phoenix Print Farm — Sovereign Supply Chain Model (2026)
+
+This document defines the sovereign supply chain architecture for the Phoenix Print Farm. It establishes how materials, components, digital assets, and finished parts move through the system while preserving national control, resilience, and manufacturing independence.
+
+The Phoenix supply chain is not linear.
+It is software-coordinated, regionally localized, and digitally enforced.
+
+1. Supply Chain Philosophy
+
+Traditional manufacturing supply chains are fragile, centralized, and opaque. Phoenix replaces this with a distributed, sovereign model built on:
+
+Local material sourcing where possible
+
+Digital inventory instead of physical stockpiles
+
+Deterministic production instead of speculative logistics
+
+Software-enforced authorization instead of trust-based vendors
+
+The objective is continuity under stress — economic, political, or environmental.
+
+2. Input Materials Layer
+2.1 Raw Materials
+
+Phoenix Print Farms rely on standardized input materials rather than bespoke parts:
+
+Thermoplastics (PLA, PETG, ABS, Nylon)
+
+Engineering polymers (CF-Nylon, GF-Nylon, PEKK where applicable)
+
+Flexible materials (TPU)
+
+Conductive and composite filaments (controlled access)
+
+Materials are:
+
+Certified at intake
+
+Logged into inventory systems
+
+Approved per application class
+
+2.2 Local Material Strategy
+
+Where feasible:
+
+Materials are sourced domestically
+
+Recycling loops convert failed prints and waste into feedstock
+
+Regional suppliers reduce import dependency
+
+This enables national material resilience.
+
+3. Digital Inventory as Supply Chain
+
+Phoenix treats design files as primary inventory, not physical goods.
+
+3.1 Digital Stock
+
+Parts exist as encrypted design assets
+
+Production occurs only when authorized
+
+No overproduction or warehousing
+
+3.2 File Governance
+
+Files are versioned, signed, and access-controlled
+
+Jurisdictional rules define where files may be executed
+
+Files never leave authorized production boundaries
+
+This converts logistics risk into software control.
+
+4. Manufacturing Nodes (Print Farms)
+
+Each Phoenix Print Farm is a supply node, not a factory.
+
+Inputs: certified materials + authorized files
+
+Output: finished, traceable parts
+
+Capacity scales horizontally by adding print cells
+
+Nodes operate:
+
+Independently if isolated
+
+Cooperatively when networked
+
+Sovereign within their jurisdiction
+
+5. Distribution & Fulfillment
+5.1 Local Fulfillment
+
+Parts produced near point of use
+
+Reduced transportation cost and delay
+
+Ideal for tools, fasteners, fixtures, and infrastructure components
+
+5.2 Controlled Export
+
+Where export is permitted:
+
+Parts carry traceable identifiers
+
+Production logs verify origin and compliance
+
+Export governed by national policy, not vendor terms
+
+6. Failure & Resilience Model
+
+Phoenix supply chains are designed for disruption.
+
+If:
+
+A supplier fails → alternate material sources activate
+
+A print cell fails → jobs reroute automatically
+
+A site goes offline → digital inventory persists elsewhere
+
+No single failure halts production.
+
+7. Sovereignty & Compliance
+
+Supply chain control remains local:
+
+No mandatory foreign cloud dependencies
+
+No external DRM controlling production rights
+
+No third-party veto over manufacturing output
+
+Compliance is enforced through:
+
+Audit logs
+
+Material certification
+
+Design authorization
+
+Local governance frameworks
+
+8. Strategic Advantages
+
+Phoenix supply chains enable:
+
+Rapid response manufacturing
+
+National industrial independence
+
+Reduced import exposure
+
+Secure production of critical components
+
+Scalable deployment across countries
+
+This is not optimization of the old model —
+it is replacement of it.
+
+9. Summary
+
+The Phoenix Print Farm supply chain:
+
+Replaces logistics with software coordination
+
+Converts inventory into encrypted digital assets
+
+Localizes production without losing standardization
+
+Maintains sovereignty at every layer
+
+It is a manufacturing nervous system, not a shipping network.
