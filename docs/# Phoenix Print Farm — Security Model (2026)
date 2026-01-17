@@ -1,0 +1,178 @@
+# Phoenix Print Farm — Security Model (2026)
+
+This document defines the security architecture of the Phoenix Print Farm.  
+It establishes how physical systems, digital assets, identities, and operations
+are protected to ensure sovereign, tamper-resistant, and auditable manufacturing.
+
+Security in Phoenix is **layered, deterministic, and locally enforced**.
+No external party has unilateral control over production.
+
+---
+
+## 1. Security Principles
+
+The Phoenix security model is built on the following principles:
+
+- **Sovereignty First** — control remains within the operating jurisdiction
+- **Zero Trust** — no implicit trust between systems or operators
+- **Deterministic Authorization** — every action is explicitly permitted
+- **Minimal Exposure** — no unnecessary network or cloud dependencies
+- **Auditability** — all actions are logged and traceable
+
+Security is enforced by system design, not operator behavior.
+
+---
+
+## 2. Physical Security Layer
+
+### 2.1 Facility Controls
+- Controlled access to print farm facilities
+- Zoned access (operators, maintenance, administrators)
+- Tamper-evident enclosures for critical systems
+
+### 2.2 Hardware Integrity
+- Secure boot on control hardware
+- Hardware serials logged and bound to system identity
+- Unauthorized hardware replacement triggers alerts
+
+### 2.3 Environmental Monitoring
+- Sensors for temperature, humidity, power stability
+- Automatic shutdown or isolation on unsafe conditions
+
+---
+
+## 3. Network Security Layer
+
+### 3.1 Network Segmentation
+- Print cells isolated from public networks
+- Control plane separated from production hardware
+- No direct internet exposure for printers
+
+### 3.2 Secure Communication
+- Encrypted communication between all components
+- Mutual authentication between nodes
+- No plaintext control or job transmission
+
+### 3.3 Air-Gapped Operation (Optional)
+- Full offline mode supported
+- Manual job transfer via approved media
+- Digital signatures required for all files
+
+---
+
+## 4. Digital Asset Security
+
+### 4.1 Design File Protection
+- All design files encrypted at rest and in transit
+- Files decrypted only inside authorized print cells
+- No raw file access by operators
+
+### 4.2 File Authorization
+- Each file has an execution policy
+- Policies define:
+  - Where the file may be produced
+  - How many times it may be produced
+  - Which materials may be used
+
+### 4.3 Version Control
+- Immutable version history
+- Cryptographic signing of approved designs
+- Rollback supported but logged
+
+---
+
+## 5. Identity & Access Control
+
+### 5.1 Identity Model
+- Cryptographic identity for:
+  - Operators
+  - Machines
+  - Facilities
+- No shared accounts
+
+### 5.2 Authentication
+- Public/private key authentication
+- Hardware key support (e.g., YubiKey-compatible)
+- Multi-factor authentication for privileged actions
+
+### 5.3 Role-Based Access
+- Operator
+- Engineer
+- Administrator
+- Auditor
+
+Each role has strictly limited permissions.
+
+---
+
+## 6. Operational Security
+
+### 6.1 Job Authorization
+- Jobs must be:
+  - Authenticated
+  - Authorized
+  - Logged
+- Unauthorized jobs cannot execute
+
+### 6.2 Runtime Protection
+- Continuous monitoring during production
+- Automatic halt on abnormal behavior
+- Job isolation between print cells
+
+### 6.3 Failure Handling
+- Failed jobs logged with cause
+- No silent retries
+- Manual review required for repeated failures
+
+---
+
+## 7. Audit & Compliance
+
+### 7.1 Logging
+- Immutable logs for:
+  - File access
+  - Job execution
+  - Material usage
+  - Operator actions
+
+### 7.2 Traceability
+- Each produced part linked to:
+  - Design file version
+  - Print cell
+  - Material batch
+  - Time of production
+
+### 7.3 Local Compliance
+- Compliance rules enforced locally
+- No external authority required for validation
+- Export or sharing governed by jurisdictional policy
+
+---
+
+## 8. Threat Model Summary
+
+Phoenix security is designed to resist:
+
+- Unauthorized production
+- Design theft
+- Supply chain manipulation
+- External shutdown or interference
+- Insider misuse
+
+The system assumes hostile conditions and enforces safety by default.
+
+---
+
+## 9. Summary
+
+The Phoenix Print Farm security model:
+
+- Protects physical and digital assets
+- Enforces sovereign control over manufacturing
+- Enables fully auditable production
+- Operates with or without external connectivity
+
+Security is not an add-on.
+It is a foundational property of the system.
+
+
