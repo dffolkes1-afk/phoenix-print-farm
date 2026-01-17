@@ -1,0 +1,164 @@
+operations.md                    # Phoenix Print Farm — Operations Model (2026)
+
+This document defines the operational model for Phoenix Print Farms. It establishes how sovereign print farms are run, monitored, maintained, and scaled under continuous, unattended operation.
+
+Operations are designed to be deterministic, auditable, and resilient — not dependent on individual operators or ad-hoc decision making.
+
+---
+
+## 1. Operational Principles
+
+Phoenix Print Farm operations are governed by five core principles:
+
+- **Continuous Operation:** Designed for 24/7 production with minimal human intervention  
+- **Determinism:** Identical inputs produce identical outputs  
+- **Fail-Safe Defaults:** Systems degrade safely, not catastrophically  
+- **Local Authority:** Operational control remains within jurisdiction  
+- **Auditability:** Every action is logged and traceable  
+
+Operations prioritize reliability over maximum throughput.
+
+---
+
+## 2. Operational Roles
+
+Phoenix operations minimize human dependency but define clear responsibility boundaries.
+
+### 2.1 Operator
+- Monitors system health dashboards
+- Performs scheduled material loading and removal
+- Responds to alerts and maintenance flags
+- No access to design files beyond execution permission
+
+### 2.2 Administrator
+- Manages authorization and access controls
+- Approves new materials and print profiles
+- Oversees compliance and audit readiness
+
+### 2.3 Maintenance Technician
+- Performs mechanical servicing and calibration
+- Replaces failed components
+- Executes recovery procedures after hardware faults
+
+No single role has unilateral system control.
+
+---
+
+## 3. Print Job Lifecycle
+
+All production follows a controlled lifecycle:
+
+1. Job submission via authenticated interface  
+2. Design file validation and authorization  
+3. Material compatibility verification  
+4. Scheduler assigns job to available print cell  
+5. Real-time monitoring during execution  
+6. Automated part removal and post-process handling  
+7. Job completion logging and archival  
+
+Manual intervention is the exception, not the norm.
+
+---
+
+## 4. Monitoring & Telemetry
+
+Phoenix Print Farms operate under continuous monitoring:
+
+- Printer status (temperature, motion, extrusion)
+- Material availability and consumption
+- Power usage and energy source status
+- Environmental conditions
+- Error and fault detection
+
+Telemetry feeds are used for:
+- Predictive maintenance
+- Capacity planning
+- Fault isolation
+
+---
+
+## 5. Maintenance Model
+
+### 5.1 Preventive Maintenance
+- Scheduled calibration
+- Component inspection
+- Firmware verification
+- Material path cleaning
+
+### 5.2 Predictive Maintenance
+- Sensor-based wear detection
+- Performance deviation alerts
+- Failure probability modeling
+
+### 5.3 Corrective Maintenance
+- Automatic job reallocation
+- Isolation of failed components
+- Logged repair actions
+
+No maintenance action occurs without logging.
+
+---
+
+## 6. Failure Handling & Recovery
+
+Phoenix systems assume failure will occur.
+
+Failure responses include:
+- Automatic job pause or migration
+- Printer isolation
+- Operator alert escalation
+- Safe shutdown when required
+
+Recovery procedures are standardized and documented.
+Improvised fixes are prohibited.
+
+---
+
+## 7. Capacity & Scaling Operations
+
+Operational scaling is horizontal:
+
+- Add print cells to increase throughput
+- No changes to core control plane required
+- Load balancing distributes demand automatically
+
+Facilities scale by replication, not expansion.
+
+---
+
+## 8. Energy Operations
+
+Print Farms support multiple energy modes:
+
+- Grid-connected operation
+- Solar-assisted operation
+- Fully off-grid microgrid deployment
+
+Energy availability informs scheduling priority and throughput throttling.
+
+---
+
+## 9. Compliance & Audits
+
+Operations maintain continuous audit readiness:
+
+- Immutable job logs
+- Material certification records
+- Operator access logs
+- Maintenance history
+
+Audits do not disrupt production.
+
+---
+
+## 10. Summary
+
+The Phoenix Print Farm operations model:
+
+- Enables uninterrupted production
+- Reduces human dependency
+- Ensures predictable output
+- Maintains jurisdictional control
+- Scales without complexity
+
+Operations are not an afterthought — they are the backbone of sovereign manufacturing.
