@@ -1,0 +1,9 @@
+Phoenix Print Farm is a sovereign, autonomous manufacturing system designed to replace centralized factories, overseas supply chains, and physical inventory with localized, software-defined production.
+
+The system operates on digital inventory, producing parts on demand from verified design files. Manufacturing occurs only when authorized, ensuring traceability, resilience, and national control over production capacity.
+
+Phoenix Print Farms are built for continuous, unattended operation using high-speed multi-material 3D printing cells. Throughput scales horizontally by adding print cells rather than facilities, enabling rapid deployment in urban, rural, and disaster-response environments.
+
+This repository defines the architecture, operations, security, governance, and supply chain model for Phoenix Print Farm deployments.
+
+This repository is architecture-first. It defines standards, control models, and deployment frameworks rather than application code.
